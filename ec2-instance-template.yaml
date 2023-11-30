@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-xxxxxxxxxxxxxxxxx  # Specify your desired Amazon Machine Image (AMI)
+      InstanceType: t2.micro
+      KeyName: YourKeyName  # Specify your key pair name
+      SubnetId: default  # Use the default subnet
